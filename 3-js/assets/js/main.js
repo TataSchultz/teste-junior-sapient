@@ -27,23 +27,50 @@ window.onload = function() {
     title.addEventListener("click", () => {
       item.classList.toggle("-active");
       description.classList.toggle("-active");
+  });
 });
 
-// // Abrir e fechar modal com a foto
-// const buttonModal = document.getElementById("button-modal");
-// const modalWiki = document.querySelector(".modal-wiki");
-// const closeModal = document.getElementById("close-modal");
+// Pegar dados da API 
+async function loadApi() {
+  const response = await fetch("https://catfact.ninja/fact");
+  if (!response.ok) {
+      throw new Error("Erro ao carregar a informação!");
+  }
+  const getContent = await response.json();
+  return getContent.fact;
 
-// closeModal.addEventListener("click", () => {
-//   modalWiki.classList.remove("-active");
-//   console.log(modalWiki)
-// });
+}
 
-// buttonModal.addEventListener("click", () => {
-//   modalWiki.classList.add("-active");
-// });
+function showInformation(data) {
+  const extractElement = document.querySelector("#wiki .extract");
+  extractElement.textContent = data;
+}
+
+async function showLoad() {
+  try {
+      const information = await loadApi();
+      showInformation(information);
+  } catch (error) {
+      console.error("Ops! Ocorreu um erro", error);
+  }
+}
+
+showLoad();
 
 
-});
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
 
 
