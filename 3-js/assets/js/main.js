@@ -1,6 +1,6 @@
 
 window.onload = function() {
-  // Abrir e fechar o menu
+// Abrir e fechar o menu  
   const menuButton = document.getElementById('menu-button');
   const menu = document.getElementById('menu');
 
@@ -20,48 +20,30 @@ window.onload = function() {
  });
 
 // Sistema de sanfona para a lista 
-
-const titles = document.querySelectorAll('.title');
-const activeItem = document.querySelector('.item.-active')
-
-
-
-activeItem.forEach((title) => {
-  title.addEventListener('click', function () {
-    // const description = this.nextElementSibling;
-    const description = activeItem.querySelector('.description')
-    description.classList.toggle('item-active');
-    description.classList.add('description');
-    console.log(description);
-  });
+  const accordionItems = document.querySelectorAll(".accordion .item");
+  accordionItems.forEach((item) => {
+    const title = item.querySelector(".title");
+    const description = item.querySelector(".description");
+    title.addEventListener("click", () => {
+      item.classList.toggle("-active");
+      description.classList.toggle("-active");
 });
 
-// titles.forEach((title) => {
-//   title.addEventListener('click', function () {
-//     const description = document.querySelectorAll('.item');
-//     console.log(description)
-//     description.classList.toggle('item-active')
-//     if (description.classList.contains('item-active')) {
-//       description.classList.remove('item-active');
-//     } else {
-//       description.classList.add('item-active');
-//     }
-//   });
-// });
-// const titles = document.querySelectorAll('.title');
+// // Abrir e fechar modal com a foto
+// const buttonModal = document.getElementById("button-modal");
+// const modalWiki = document.querySelector(".modal-wiki");
+// const closeModal = document.getElementById("close-modal");
 
-// titles.forEach((title) => {
-//   title.addEventListener('click', function () {
-//     const item = this.closest('.item');
-//     const description = item.querySelector('.description');
-    
-//     console.log(description);
-    
-//     if (description.classList.contains('item-active')) {
-//       description.classList.remove('item-active');
-//     } else {
-//       description.classList.add('item-active');
-//     }
-//   });
+// closeModal.addEventListener("click", () => {
+//   modalWiki.classList.remove("-active");
+//   console.log(modalWiki)
 // });
+
+// buttonModal.addEventListener("click", () => {
+//   modalWiki.classList.add("-active");
+// });
+
+
+});
+
 
