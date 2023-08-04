@@ -31,6 +31,7 @@ accordionItems.forEach((item) => {
 });
 
 // Pegar dados da API 
+//Obs: Informaçao sobre atualizaçao da API enviada em 03/08 por Danilo Riedel
 async function loadApi() {
   const response = await fetch("https://catfact.ninja/fact");
   if (!response.ok) {
