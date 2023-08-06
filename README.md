@@ -5,7 +5,7 @@
 Olá!
 
 Este é o repositório do meu teste técnico para a posição de Analista Desenvolvedora Júnior. Estou empolgada para demonstrar minhas habilidades e conhecimentos por meio deste teste. 
-Abaixo estão as instruções para a realização do teste e algumas informações sobre as áreas de atuação na empresa.
+Abaixo estão as instruções para a realização e algumas informações sobre as áreas de atuação na empresa.
 
 - - - - -
 ## Prazo para conclusão:
