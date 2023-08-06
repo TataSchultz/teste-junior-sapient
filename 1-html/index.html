@@ -10,108 +10,123 @@
     <img src="assets/img/logo.svg" alt="logo" width="32">
      <nav>
         <ul type="none">
-          <li><a style="text-decoration: none;" href="#quem-somos">Quem Somos</a></li>
-          <li><a style="text-decoration: none;" href="#trabalhe-conosco">Trabalhe conosco</a></li>
-          <li><a style="text-decoration: none;" href="#pessoas">Pessoas</a></li>
-          <li><a style="text-decoration: none;" href="#cases">Cases</a></li>
+          <li><a href="#quem-somos">Quem Somos</a></li>
+          <li><a href="#trabalhe-conosco">Trabalhe conosco</a></li>
+          <li><a href="#pessoas">Pessoas</a></li>
+          <li><a href="#cases">Cases</a></li>
         </ul>
       </nav>
       <span class="menu">
         <a class="fa-bars"></a>
+        <img src="assets/img/facebook.svg" alt="logo do facebook" width="32">
+        <img src="assets/img/instagram.svg" alt="logo do instagram" width="32">
+        <img src="assets/img/linkedin.svg" alt="logo do linkedin" width="32">
+        <img src="assets/img/medium.svg" alt="logo do medium" width="32">
       </span>
-      <div> 
         <label for="username">Pesquisar:</label>
-        <input type="text" id="username" name="username">
-      </div>
-
-      <h1>Olá Mundo!</h1>   
+        <input type="text" id="username" name="username">   
   </header> 
   <main>
     <section class="first-page">
-      <div class="head">
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+      <h1>Olá Mundo!</h1>
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
         dolore magna aliquam erat volutpat. Ut wisi enim ad minim </p>
         <video controls width="640" height="360" id="video-player" class="video-player">
             <source src="assets/video/video.mp4" type="video/mp4">
             Desculpe, mas o navegador não suporta o vídeo
         </video>
         <blockquote>
-        <p> "LOREM IPSUM DOLOR SIT AMET,<br></p>
+        <p> "LOREM IPSUM DOLOR SIT AMET,</p>
         <p>CONSECTETUER VOLUTPAT. Ut."</p>
         </blockquote>
-    </section>  
-
-      <section class="gallery">
-        <h2>Galeria de imagens</h2>
-        <figure>
-          <button id="prev-button">Anterior</button>
-          <img src="assets/img/imagem-1.png" width="540" height="360" alt="Fotografia 1">
-          <button id="next-button">Próxima</button> 
-        </figure>
-      </section>
-    </div>
-    <section class="faq">
-        <article class="faq-item">
-            <button class="faq-toggle" style="float: left;">-</button>
-           <h3>LOREM IPSUM DOLOR SIT </h3>
-           <div class="faq-answer">
-           <p>Lorem ipsum dolor sit amet, consectetuer erat volutpat. Ut wisi enim ad
-            minim </p>
-           </div>
-        </article>
-        <article class="faq-item">
-            <button class="faq-toggle" style="float: left;">+</button>
-           <h3>LOREM IPSUM DOLOR SIT </h3>
-         </article>
-         <article class="faq-item">
-            <button class="faq-toggle" style="float: left;">+</button>
-           <h3>LOREM IPSUM DOLOR SIT </h3>
-         </article>
-         <article class="faq-item">
-            <button class="faq-toggle" style="float: left;">+</button>
-           <h3>LOREM IPSUM DOLOR SIT </h3>
-         </article>
-         <article class="faq-item">
-            <button class="faq-toggle" style="float: left;">+</button>
-           <h3>LOREM IPSUM DOLOR SIT </h3>
-         </article>
-      </section>
-      <section class="partners">
-        <h3>Parceiros</h3>
-        <div class="partners-images">
-            <picture>
-                <img src="assets/img/imagem-1.png" width="330" alt="imagem da empresa parceira">
-            </picture>
+    </section>
+    <section class="gallery">
+      <h2>Galeria de imagens</h2>
+      <div role="region" aria-label="Galeria de imagens" class="carousel" aria-live="polite">
+          <button id="prev-button" aria-label="Imagem anterior">Anterior</button>
+          <div class="carousel-items">
+              <img src="assets/img/imagem-1.png" width="540" height="360" alt="Fotografia 1">
+          </div>
+          <button id="next-button" aria-label="Próxima imagem">Próxima</button>
+      </div>
+    </section>
+    <section class="accordion">
+        <div class="faq-item">
+            <button class="faq-toggle" aria-expanded="true" style="float: left;" aria-controls="answer1">-</button>
+            <h3>LOREM IPSUM DOLOR SIT</h3>
+            <div id="answer1" class="faq-answer">
+                <p>Lorem ipsum dolor sit amet, consectetuer erat volutpat. Ut wisi enim ad minim</p>
+            </div>
         </div>
-      </section>
-      <section class="contact">
+        <div class="faq-item">
+            <button class="faq-toggle" aria-expanded="false" style="float: left;" aria-controls="answer2">+</button>
+            <h3>LOREM IPSUM DOLOR SIT</h3>
+            <div id="answer2" class="faq-answer" hidden>
+                <p>Lorem ipsum dolor sit amet, consectetuer erat volutpat. Ut wisi enim ad minim</p>
+            </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-toggle" aria-expanded="false" style="float: left;" aria-controls="answer3">+</button>
+          <h3>LOREM IPSUM DOLOR SIT</h3>
+          <div id="answer3" class="faq-answer" hidden>
+              <p>Lorem ipsum dolor sit amet, consectetuer erat volutpat. Ut wisi enim ad minim</p>
+          </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-toggle" aria-expanded="false" style="float: left;" aria-controls="answer4">+</button>
+        <h3>LOREM IPSUM DOLOR SIT</h3>
+        <div id="answer4" class="faq-answer" hidden>
+            <p>Lorem ipsum dolor sit amet, consectetuer erat volutpat. Ut wisi enim ad minim</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-toggle" aria-expanded="false" style="float: left;" aria-controls="answer5">+</button>
+        <h3>LOREM IPSUM DOLOR SIT</h3>
+        <div id="answer5" class="faq-answer" hidden>
+          <p>Lorem ipsum dolor sit amet, consectetuer erat volutpat. Ut wisi enim ad minim</p>
+      </div>
+     </div> 
+    </section>
+    <section class="partners">
+      <h3>Parceiros</h3>
+      <figure role="region" aria-label="Carrossel de Parceiros" class="carousel" aria-live="polite">
+        <img src="assets/img/imagem-1.png" width="330" alt="imagem da empresa parceira">
+        <figcaption>
+          <a href="#conheça-mais-1">Conheça mais</a>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam</p>
+        </figcaption>
+        <button class="carousel-prev-button" aria-label="Imagem anterior">Anterior</button>
+        <button class="carousel-next-button" aria-label="Próxima imagem">Próxima</button>
+      </figure>
+    </section>
+    <section class="contact">
         <form class="contact-informations">
           <label for="name">Nome:</label>
-          <input type="text" id="name" name="name" required> <br>
-      
+          <input type="text" id="name" name="name" required> 
           <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required><br>
-      
+          <input type="email" id="email" name="email" required>
           <label for="phone">Telefone:</label>
-          <input type="tel" id="phone" name="phone"><br>
-
-          <label for="message">Mensagem:</label> <br>
-          <textarea id="message" name="message" rows="5" cols="50"></textarea><br>
-
-          <button type="submit">Enviar</button><br>
+          <input type="tel" id="phone" name="phone">
+          <label for="message">Mensagem:</label> 
+          <textarea id="message" name="message"></textarea>
+          <button type="submit">Enviar</button>
         </form>
       </section>  
   </main>
   <footer class="footer">
-    <p>Av. Dr. Figueiredo Mascarenhas, 94</p>
-    <p>Tres Vendas, Pelotas - RS</p>
-    <p>96055-510</p>
-    <p>(53) 3030-3030</p>Tres Vendas, Pelotas - RS</p>
-    <span>
-        <a href="#vagas">Vagas</a>
-        <a href="#cases">Cases</a>
-        <a href="#sitemap">Sitemap</a>
-    </span>
+    <address>
+      <p>Av. Dr. Figueiredo Mascarenhas, 94</p>
+      <p>Tres Vendas, Pelotas - RS</p>
+      <p>96055-510</p>
+      <p>Tres Vendas, Pelotas - RS</p>
+    </address>
+    <nav>
+      <ul>
+        <li><a href="#vagas">Vagas</a></li>
+        <li><a href="#cases">Cases</a></li>
+        <li><a href="#sitemap">Sitemap</a></li>
+      </ul>
+    </nav>
   </footer>
 </body>
 </html>
