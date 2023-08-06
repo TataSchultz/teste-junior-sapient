@@ -1,17 +1,15 @@
 # Front-end Junior
 
-## Como fazer o teste?
+## Teste Técnico - Processo Seletivo -Analista Desenvolvedora Junior
 
-  * Clone o projeto na sua máquina
-  * Siga as instruções do **README.md** contido em cada uma das pastas
-  * Crie o projeto em um respositório pessoal
-  * Mude o remote do repositório clonado para o seu repositório pessoal
-  * Envie o link do seu respositório para a pessoa que lhe enviou o teste
+Olá!
 
-> Faça tudo com calma e carinho que vamos olhar desta forma na hora de analisar o seu teste, e boa sorte <3
-
+Este é o repositório do meu teste técnico para a posição de Analista Desenvolvedora Júnior. Estou empolgada para demonstrar minhas habilidades e conhecimentos por meio deste teste. 
+Abaixo estão as instruções para a realização do teste e algumas informações sobre as áreas de atuação na empresa.
 
 - - - - -
+## Prazo para conclusão:
+  5 dias
 
 ## Conhecimentos técnicos esperados:
  1. HTML 5
